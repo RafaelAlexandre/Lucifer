@@ -1,0 +1,27 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<persistence version="2.1" xmlns="http://xmlns.jcp.org/xml/ns/persistence" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://xmlns.jcp.org/xml/ns/persistence http://xmlns.jcp.org/xml/ns/persistence/persistence_2_1.xsd">
+    <persistence-unit name="luciferPU" transaction-type="RESOURCE_LOCAL">
+        <provider>org.hibernate.jpa.HibernatePersistenceProvider</provider>
+		<class>br.edu.unifei.ecot12.lucifer.Anjo</class>
+		<class>br.edu.unifei.ecot12.lucifer.Arma</class>
+		<class>br.edu.unifei.ecot12.lucifer.Caso</class>
+		<class>br.edu.unifei.ecot12.lucifer.Demonio</class>
+		<class>br.edu.unifei.ecot12.lucifer.Detetive</class>
+		<class>br.edu.unifei.ecot12.lucifer.Divindade</class>
+		<class>br.edu.unifei.ecot12.lucifer.Humano</class>
+		<class>br.edu.unifei.ecot12.lucifer.Prova</class>
+		<class>br.edu.unifei.ecot12.lucifer.Reu</class>
+		<class>br.edu.unifei.ecot12.lucifer.Ser</class>
+		<class>br.edu.unifei.ecot12.lucifer.Vitima</class>
+		<class>br.edu.unifei.ecot12.lucifer.Paraiso</class>
+		<class>br.edu.unifei.ecot12.lucifer.Inferno</class>
+		<properties>
+            <property name="javax.persistence.jdbc.url" value="jdbc:mysql://localhost:3306/lucifer?useTimezone=true&amp;serverTimezone=UTC"/>
+            <property name="javax.persistence.jdbc.user" value="lucifer"/>
+            <property name="javax.persistence.jdbc.driver" value="org.mariadb.jdbc.Driver"/>
+            <property name="javax.persistence.jdbc.password" value="lucifer"/>
+            <property name="hibernate.dialect" value="org.hibernate.dialect.MariaDBDialect"/>
+            <property name="javax.persistence.schema-generation.database.action" value="none"/>
+        </properties>
+    </persistence-unit>
+</persistence>
